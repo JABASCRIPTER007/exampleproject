@@ -1,34 +1,75 @@
-.pagebuilder-banner-wrapper [data-element='content'] {
-    min-height: 50px;
-    overflow: auto;
-    position: absolute;
-    left: 310px;
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .pagebuilder-banner-wrapper {
+        [data-element='content'] {
+            min-height: 50px;
+            overflow: auto;
+            position: absolute;
+            left: 310px;
+        }
+    }
+
+    #html-body {
+        [data-pb-style=QBY7HIY] {
+            border-radius: 0;
+            top: -120px;
+            min-height: 300px;
+            background-color: transparent;
+        }
+
+        [data-pb-style=SD2P9UM] {
+            border-radius: 0;
+            top: -120px;
+            min-height: 300px;
+            background-color: transparent;
+        }
+    }
+
+    #html-body [data-pb-style=SGHVU0Y] {
+        background-position: left top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+
+    #html-body [data-pb-style=SGHVU0Y] :hover {
+        background-color: black;
+        opacity: 30%;
+    }
+
+    pagebuilder-banner-wrapper background-image-62c810218ddfa background-image-62c810219c6c7 :hover {
+        background-color: black;
+        opacity: 30%;
+    }
+
+    .products-grid .product-item-info:hover,
+    .products-grid .product-item-info.active {
+        background: #ffffff;
+        box-shadow: none;
+        border: none;
+        margin: -10px;
+        padding: 9px;
+        position: relative;
+        z-index: 9;
+    }
+
+    .block.widget .products-grid .product-item .product-item-inner,
+    .page-layout-1column .block.widget .products-grid .product-item .product-item-inner,
+    .page-layout-3columns .block.widget .products-grid .product-item .product-item-inner {
+        box-shadow: none;
+        margin: 9px 0 0 -1px;
+    }
 }
 
-#html-body [data-pb-style=QBY7HIY] {
-    border-radius: 0;
-    top: -120px;
-    min-height: 300px;
-    background-color: transparent;
-}
 
 
-#html-body [data-pb-style=SD2P9UM] {
-    border-radius: 0;
-    top: -120px;
-    min-height: 300px;
-    background-color: transparent;
-}
 
-#html-body [data-pb-style=S3LMKLY] :hover {
-    background-color: black;
-    opacity: 30%;
-}
 
-.product-item .price-box .price-label {
-    color: #666666;
-    font-size: 0px;
-}
+
+
 
 
 

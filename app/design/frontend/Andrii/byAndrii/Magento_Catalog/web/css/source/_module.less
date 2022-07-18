@@ -1156,6 +1156,7 @@
 }
 
 .product-item .price-box .price {
+    display: inline-grid;
     font-weight: 700;
     white-space: nowrap;
     font-size: 18px;
@@ -1194,13 +1195,24 @@
     display: none;
     vertical-align: middle;
     position: absolute;
-    left: 90px;
+    left: 107px;
     top: -80px;
+    transition: 0.55s opacity, 0.55s visibility;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    visibility: visible;
+    transform: translateY(0);
 }
-
 .product-item :hover {
     .product-item-inner {
         display: inline-block;
+    }
+    .special-price {
+        display: none;
+    }
+
+    .price-final_price {
+        display: none;
     }
 
     .action.primary,
@@ -1211,16 +1223,187 @@
         display: inline-grid;
         vertical-align: middle;
     }
-
     .product-item-actions .actions-primary + .actions-secondary {
         display: inline-grid;
         vertical-align: middle;
         position: absolute;
-        left: 90px;
-        transition: 0.55s opacity, 0.55s visibility;
+        left: 107px;
         top: -230px;
+        background-color: white;
+        padding: 15px 0;
+    }
+    .product-item .price-box {
+        display: none;
     }
 }
+.product-item .price-box .price-label {
+    display: none;
+}
+pagebuilder-overlay pagebuilder-poster-overlay :hover {
+    background-color: black;
+    opacity: 30%;
+}
+#html-body [data-pb-style=NH8PKVC] {
+    line-height: 10px;
+    border-bottom: 1px solid black;
+    display: table;
+    font-size: 14px;
+    margin-left: 210px;
+    margin-top: 109px;
+    opacity: 1;
+    visibility: visible;
+    text-decoration: none;
+}
+a.pagebuilder-button-link, button.pagebuilder-button-link, div.pagebuilder-button-link{
+    padding: 10px 0px;
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+
+
+#html-body [data-pb-style=BJNF7IC] {
+    margin-left: 280px;
+    margin-top: 100px;
+    display: table;
+    line-height: 20px;
+    border-bottom: 1px solid black;
+}
+
+#html-body [data-pb-style=BJNF7IC] :hover {
+    text-decoration: none;
+    color: black;
+}
+
+#html-body [data-pb-style=BJNF7IC] .active {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+#html-body [data-pb-style=D51KYHX] {
+    margin-left: 280px;
+    margin-top: 100px;
+    opacity: 1;
+    visibility: visible;
+    display: table;
+    border-bottom: 1px solid black;
+}
+
+#html-body [data-pb-style=D51KYHX] :hover {
+    text-decoration: none;
+    color: black;
+}
+
+#html-body [data-pb-style=D51KYHX] .active {
+    text-decoration: none;
+    color: black;
+}
+
+#html-body [data-pb-style=DYDHO5S] {
+    position: absolute;
+    margin-left: 215px;
+    margin-top: 88px;
+    opacity: 1;
+    visibility: visible;
+    display: table;
+    border-bottom: 1px solid black;
+}
+
+#html-body [data-pb-style=YGKB41I] {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 210px;
+    display: table;
+    border-bottom: 1px solid black;
+}
+
+#html-body [data-pb-style=D5CUGDD] {
+    position: absolute;
+}
+
+div[data-content-type='text'] {
+    z-index: 1;
+}
+
+.pagebuilder-banner-wrapper .pagebuilder-banner-button{
+    margin-left: 281px;
+    margin-top: 110px;
+    display: table;
+    border-bottom: 1px solid black;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+a.pagebuilder-button-link:hover, button.pagebuilder-button-link:hover, div.pagebuilder-button-link:hover {
+    text-decoration: none;
+    color: black;
+}
+
+a.pagebuilder-button-link:hover, button.pagebuilder-button-link:active, div.pagebuilder-button-link:active {
+    text-decoration: none;
+    color: black;
+}
+
+
+#html-body [data-pb-style=HK82Q3D] {
+    text-decoration: none;
+    display: table;
+    border-bottom: 1px solid black;
+}
+
+#html-body [data-pb-style=AJHY3LW] {
+    text-decoration: none;
+    display: table;
+    border-bottom: 1px solid black;
+}
+
+
+
+.products-grid .product-item-info:hover,
+.products-grid .product-item-info.active {
+    box-shadow: none;
+}
+
+.product-item :hover .action.primary,
+.product-item :hover .action-primary {
+    font-family: 'Oswald',sans-serif;
+    margin-top: -6px;
+    display: table;
+    border-bottom: 1px solid black;
+    line-height: 20px;
+}
+
+.product-item :hover .product-item-actions .actions-primary + .actions-secondary {
+    padding: 15px 0;
+    left: 89px;
+    top: -191px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
